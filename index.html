@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Tester</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="app">
+        <header class="header">
+            <div class="logo">⌨</div>
+            <h1>TypeSprint</h1>
+            <p>Test your typing speed and accuracy</p>
+        </header>
+
+        <section class="stats">
+            <div class="stat-card">
+                <span>Time Left</span>
+                <strong id="timer">60s</strong>
+            </div>
+
+            <div class="stat-card">
+                <span>WPM</span>
+                <strong id="wpm">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <span>Accuracy</span>
+                <strong id="accuracy">100%</strong>
+            </div>
+        </section>
+
+        <section class="test-card">
+            <div class="test-heading">
+                <h2>Ready to type?</h2>
+                <span class="duration">60 seconds</span>
+            </div>
+
+            <p id="passage" class="passage"></p>
+
+            <label for="typingInput">Your typing area</label>
+            <textarea
+                id="typingInput"
+                placeholder="Start typing the text above..."
+                spellcheck="false"
+                autocomplete="off"
+                autocapitalize="off"
+            ></textarea>
+
+            <p id="message" class="message" aria-live="polite">
+                Start typing to begin the test.
+            </p>
+
+            <button id="restartBtn" type="button">
+                ↻ Restart Test
+            </button>
+        </section>
+
+        <footer>
+            Practice daily. Improve one word at a time.
+        </footer>
+    </main>
+
+</body>
+</html>
